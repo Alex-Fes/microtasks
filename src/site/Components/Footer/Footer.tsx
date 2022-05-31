@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../../../App.css'
 
 type FooterPropsType =  {
     titleForFooter: string
@@ -9,7 +9,7 @@ type FooterPropsType =  {
 
 const Footer = (props: FooterPropsType) => {
     return (
-        <div>{props.titleForFooter}</div>
+        <div className='App'>{props.titleForFooter}</div>
     )
 }
 

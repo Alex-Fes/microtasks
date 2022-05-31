@@ -1,4 +1,7 @@
 import React from 'react';
+import '../../../App.css'
+
+
 
 type BodyPropsType = {
     titleForBody: string
@@ -8,7 +11,7 @@ type BodyPropsType = {
 
 const Body = (props: BodyPropsType) => {
     return (
-        <div>{props.titleForBody}</div>
+        <div className='App'>{props.titleForBody}</div>
     )
 }
 

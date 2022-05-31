@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../../../App.css'
 
 type HeaderPropsType = {
     titleForHeader: string
@@ -8,7 +8,7 @@ type HeaderPropsType = {
 
 const Header = (props: HeaderPropsType) => {
     return (
-        <div>{props.titleForHeader}</div>
+        <div className='App'>{props.titleForHeader}</div>
     )
 }
 
