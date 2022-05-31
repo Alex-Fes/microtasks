@@ -1,42 +1,35 @@
 import React from 'react';
+import './map.css'
 
 type NewComponentPropsType = {
-    // topCars: Array<topCarsPropsType>;
-    autoCheck: Array<topCarsPropsType>
+    autoCheck: topCarsPropsType[]
+    // autoCheck: Array<topCarsPropsType>
 }
 
-type topCarsPropsType = {
-    manufacturer: string,
+export type topCarsPropsType = {
+    manufacturer: string
     model: string
 }
 
-const Auto = (props: NewComponentPropsType) => {
+const Auto = ({autoCheck}: NewComponentPropsType) => {
+
+    let carFromMap = autoCheck.map((el, index) => {
+
     return (
-        <div>
-            {props.autoCheck.map((objectFromTopCars, index) => {
-                return (
-                    <div>
-                        <table>
-                            <tr>
-                                <th>№</th>
-                                <th>Auto</th>
-                                <th>Model</th>
-                            </tr>
-                            <tr>
-                                <td>{index + 1}</td>
-                                <td>{objectFromTopCars.manufacturer}</td>
-                                <td>{objectFromTopCars.model}</td>
-                            </tr>
 
-                        </table>
-
-                    </div>
-                )
-            })}
-
-
-        </div>
+        <tr key={index}>
+            <th key={index}>{index + 1}</th>
+            <th key={el.manufacturer}>{el.manufacturer}</th>
+            <th key={el.model}>{el.model}</th>
+        </tr>
     )
-}
+    })
+
+    return (
+        <table>
+            {carFromMap}
+        </table>
+    )
+};
 
 export default Auto;
