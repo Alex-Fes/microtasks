@@ -5,6 +5,9 @@ import Footer from "./site/Components/Footer/Footer";
 import Body from "./site/Components/Body/Body";
 import Auto from "./site/Components/Map/Map";
 import Button from "./site/Components/Button/Button";
+import Filter from "./site/Components/Filter/Filter";
+
+
 
 
 function App() {
@@ -22,16 +25,16 @@ function App() {
     // const ButtonFoo3 = (subscriber:string) => {
     //     console.log(subscriber)
     // }
-    let [a, setA] = useState(1)
-
-    const onClickHandler = () => {
-        setA(++a)
-        console.log(a)
-    }
-    const onClickZero = () => {
-        setA(0)
-        console.log(a)
-    }
+    // let [a, setA] = useState(1)
+    //
+    // const onClickHandler = () => {
+    //     setA(++a)
+    //     console.log(a)
+    // }
+    // const onClickZero = () => {
+    //     setA(0)
+    //     console.log(a)
+    // }
 
 
     return (
@@ -43,12 +46,12 @@ function App() {
             {/*<div><Button name={'MyYouTubeChannel-1'} callBack={()=>ButtonFoo2('Im Ivan')} /></div>*/}
             {/*<div><Button name={'Stupid BUTTON'} callBack={()=>ButtonFoo3('Im stupid button')} /></div>*/}
             {/*<div><Footer titleForFooter={'FOOTER'}/></div>*/}
-            <h1>{a}</h1>
-            <button onClick={onClickHandler}>number</button>
-            <button onClick={onClickZero}>0</button>
-
+            {/*<h1>{a}</h1>*/}
+            {/*<button onClick={onClickHandler}>number</button>*/}
+            {/*<button onClick={onClickZero}>0</button>*/}
+            <div><Filter /></div>
         </div>
-    );
+);
 }
 
 export default App;
