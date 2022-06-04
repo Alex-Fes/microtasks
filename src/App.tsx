@@ -6,6 +6,7 @@ import Body from "./site/Components/Body/Body";
 import Auto from "./site/Components/Map/Map";
 import Button from "./site/Components/Button/Button";
 import Filter from "./site/Components/Filter/Filter";
+import {FullInput} from "./site/Components/Input/FullInput";
 
 
 
@@ -49,7 +50,8 @@ function App() {
             {/*<h1>{a}</h1>*/}
             {/*<button onClick={onClickHandler}>number</button>*/}
             {/*<button onClick={onClickZero}>0</button>*/}
-            <div><Filter /></div>
+            {/*<div><Filter /></div>*/}
+            <div><FullInput /></div>
         </div>
 );
 }

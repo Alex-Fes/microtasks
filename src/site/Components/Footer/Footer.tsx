@@ -1,10 +1,9 @@
 import React from 'react';
 import '../../../App.css'
 
-type FooterPropsType =  {
+type FooterPropsType = {
     titleForFooter: string
 }
-
 
 
 const Footer = (props: FooterPropsType) => {
